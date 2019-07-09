@@ -8,7 +8,6 @@ namespace Versionamento.WebApi.V1.Controllers
     /// <summary>
     /// Representa o servico RestFul para Produto
     /// </summary>
-    [ApiController]
     [ApiVersion("1.0")]
     [ApiVersion("0.9", Deprecated = true)]
     [Route("api/v{version:apiVersion}/[controller]")]

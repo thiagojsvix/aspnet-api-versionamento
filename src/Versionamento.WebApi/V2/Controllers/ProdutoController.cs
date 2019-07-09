@@ -8,7 +8,6 @@ namespace Versionamento.WebApi.V2.Controllers
     /// <summary>
     /// Representa o servico RestFul para Produto
     /// </summary>
-    [ApiController]
     [ApiVersion("2.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class ProdutoController : ControllerBase
