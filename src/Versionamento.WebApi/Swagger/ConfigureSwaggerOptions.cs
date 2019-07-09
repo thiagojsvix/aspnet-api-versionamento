@@ -4,7 +4,7 @@ using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Versionamento.WebApi
+namespace Versionamento.WebApi.Swagger
 {
     /// <summary>
     /// Configures the Swagger generation options.
@@ -38,9 +38,9 @@ namespace Versionamento.WebApi
 
             var info = new Info()
             {
-                Title = "Exeplo de Versionamento de API",
+                Title = "Exemplo de Versionamento de API",
                 Version = description.ApiVersion.ToString(),
-                Description = "Essa aplicação apresenta com Exemplo saida em format Xml e versionamento de API com Swagger, Swashbuckle, e API versioning.",
+                Description = "Essa aplicação apresenta como Exemplo saida em format Xml,versionamento de API com Swagger, Swashbuckle, e API versioning.",
                 Contact = new Contact() { Name = "Nick Fury", Email = "nick.fury@vingadores.com.br" },
                 TermsOfService = "Shareware",
                 License = new License() { Name = "MIT", Url = "https://opensource.org/licenses/MIT" }
