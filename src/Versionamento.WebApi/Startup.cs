@@ -27,13 +27,16 @@ namespace Versionamento.WebApi
                     .AddXmlSerializerFormatters();
 
             services.AddApiVersionHandler()
-                    .AddSwaggerHandler();
+                    .AddSwaggerHandler()
+                    .AddHelpCheckHandler();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
             app.UseDeveloperExceptionPage();
             app.UseSwaggerHandler(provider);
+            app.UseHealthChecksHandlers();
+
             app.UseMvc();
             app.UseHttpsRedirection();
         }
