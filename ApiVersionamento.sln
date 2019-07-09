@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4658C54B-55B5-4D94-858A-7873873B33E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{77C8ECA4-104A-44F9-869A-A4F34007B803}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5BCA5FE7-8714-48F3-8EF9-05547CAF0F5A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versionamento.WebApi", "src\Versionamento.WebApi\Versionamento.WebApi.csproj", "{D491F085-D8FF-490A-9BAB-ACFF3F5319BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D491F085-D8FF-490A-9BAB-ACFF3F5319BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D491F085-D8FF-490A-9BAB-ACFF3F5319BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D491F085-D8FF-490A-9BAB-ACFF3F5319BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D491F085-D8FF-490A-9BAB-ACFF3F5319BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D491F085-D8FF-490A-9BAB-ACFF3F5319BB} = {4658C54B-55B5-4D94-858A-7873873B33E7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7BFB857-9B96-4F8F-BE85-36547E3C271D}
+	EndGlobalSection
+EndGlobal
