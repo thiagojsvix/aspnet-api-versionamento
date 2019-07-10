@@ -40,7 +40,7 @@ namespace Versionamento.WebApi.Swagger
             {
                 Title = "Exemplo de Versionamento de API",
                 Version = description.ApiVersion.ToString(),
-                Description = "Essa aplicação apresenta como Exemplo saida em format Xml,versionamento de API com Swagger, Swashbuckle, e API versioning.",
+                Description = "Essa aplicação apresenta como Exemplo, saida em format Xml,versionamento de API com Swagger, Swashbuckle, e API versioning.",
                 Contact = new Contact() { Name = "Nick Fury", Email = "nick.fury@vingadores.com.br" },
                 TermsOfService = "Shareware",
                 License = new License() { Name = "MIT", Url = "https://opensource.org/licenses/MIT" }
