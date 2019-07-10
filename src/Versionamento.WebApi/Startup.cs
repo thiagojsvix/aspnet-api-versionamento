@@ -28,14 +28,16 @@ namespace Versionamento.WebApi
 
             services.AddApiVersionHandler()
                     .AddSwaggerHandler()
-                    .AddHelpCheckHandler();
+                    //.AddHelpCheckHandler()
+                    .AddGlobalExceptionHandler();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
             app.UseDeveloperExceptionPage();
             app.UseSwaggerHandler(provider);
-            app.UseHealthChecksHandlers();
+            //app.UseHealthChecksHandlers();
+            app.UseGlobalExceptionHandler();
 
             app.UseMvc();
             app.UseHttpsRedirection();
