@@ -5,10 +5,10 @@ using Versionamento.WebApi.V2.ViewModel;
 
 namespace Versionamento.WebApi.V2.Controllers
 {
+    /// <inheritdoc />
     /// <summary>
     /// Representa o servico RestFul para Produto
     /// </summary>
-    [ApiVersion("2.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class ProdutoController : ControllerBase
     {

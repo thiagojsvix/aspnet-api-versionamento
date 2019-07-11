@@ -12,6 +12,7 @@ namespace Versionamento.WebApi.Extension
                 options.ReportApiVersions = true;
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.DefaultApiVersion = new ApiVersion(1, 0);
+                options.Conventions.Controller<V2.Controllers.ProdutoController>().HasApiVersion(new ApiVersion(2, 0));
             });
             services.AddVersionedApiExplorer(
                 options =>

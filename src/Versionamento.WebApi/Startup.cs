@@ -28,7 +28,7 @@ namespace Versionamento.WebApi
 
             services.AddApiVersionHandler()
                     .AddSwaggerHandler()
-                    //.AddHelpCheckHandler()
+                    .AddHelpCheckHandler()
                     .AddGlobalExceptionHandler();
         }
 
@@ -36,7 +36,7 @@ namespace Versionamento.WebApi
         {
             app.UseDeveloperExceptionPage();
             app.UseSwaggerHandler(provider);
-            //app.UseHealthChecksHandlers();
+            app.UseHealthChecksHandlers();
             app.UseGlobalExceptionHandler();
 
             app.UseMvc();

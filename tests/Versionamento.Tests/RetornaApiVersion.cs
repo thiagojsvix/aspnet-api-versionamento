@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using FluentAssertions;
@@ -36,6 +37,18 @@ namespace Versionamento.Tests
             //assert
             responseMessage.Headers.GetValues("api-supported-versions").Single().Should().Be("1.0, 2.0");
             responseMessage.Headers.GetValues("api-deprecated-versions").Single().Should().Be("0.9");
+        }
+
+        [Fact]
+        public async Task Deve_Retorna_StatusCode_OK()
+        {
+            //arrange
+            var response = await this.httpClient.GetAsync("api/StatusCode");
+
+            //act
+
+            //assert
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 
         private string GetAppBasePath(string applicationWebSiteName)

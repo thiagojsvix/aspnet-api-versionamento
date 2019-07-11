@@ -25,7 +25,8 @@ namespace Versionamento.WebApi.V1.Controllers
         /// Obter lista de Produtos
         /// </summary>
         [HttpGet]
-        public ActionResult<IEnumerable<Produto>> ObterPessoaGet()
+        [MapToApiVersion("1.0")]
+        public ActionResult<IEnumerable<Produto>> ObterProdutos()
         {
             return Produtos.ToList();
         }
@@ -35,8 +36,8 @@ namespace Versionamento.WebApi.V1.Controllers
         /// </summary>
         /// <param name="id">id de registro do Produto</param>
         [HttpGet("{id}")]
-        [MapToApiVersion("1.0")]
-        public IActionResult Get(long id)
+        [MapToApiVersion("0.9")]
+        public IActionResult ObterProduto(long id)
         {
             return Ok(Produtos.FirstOrDefault(x => x.Id == id));
         }
